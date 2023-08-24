@@ -77,13 +77,16 @@ Where we used  the fact that the covariance matrix is symmetric
 6)
 
 \ba
-\langle  \bm{a}  \rangle= ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}{\cal P}^{T}  \Sigma^{-1} \langle \bm{d} \rangle =  ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}{\cal P}^{T}  \Sigma^{-1} \langle  {\cal P}\bm{a} + \bm{n} \rangle  = \bm{a}
+\langle  \bm{\hat{a}}  \rangle= ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}{\cal P}^{T}  \Sigma^{-1} \langle \bm{d} \rangle =  ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}{\cal P}^{T}  \Sigma^{-1} \langle  {\cal P}\bm{a} + \bm{n} \rangle  = \bm{a}
 \ea
 since $\langle  \bm{n} \rangle=0$
 \ba
-\langle  \bm{a} \bm{a}^{T}  \rangle &=& ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}{\cal P}^{T}  \Sigma^{-1} \langle \bm{d}  \bm{d}^{T} \rangle  \Sigma^{-1}{\cal P} ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1} \nonumber \\
+\langle  \bm{\hat{a}} \bm{\hat{a}}^{T}  \rangle &=& ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}{\cal P}^{T}  \Sigma^{-1} \langle \bm{d}  \bm{d}^{T} \rangle  \Sigma^{-1}{\cal P} ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1} \nonumber \\
+&=&  ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}{\cal P}^{T}  \Sigma^{-1} \langle  ({\cal P}\bm{a} + \bm{n})({\cal P}\bm{a} + \bm{n})^{T}\rangle  \Sigma^{-1}{\cal P} ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1} \nonumber \\
+&=&  ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}{\cal P}^{T}  \Sigma^{-1}   {\cal P}\bm{a} \bm{a}^{T} {\cal P}^{T}   \Sigma^{-1}{\cal P} ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1} \nonumber \\
+&+& ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}{\cal P}^{T}  \Sigma^{-1} \Sigma  \Sigma^{-1}{\cal P} ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1} \nonumber \\
 &=&   \bm{a} \bm{a}^{T}   +  ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1} \nonumber \\
-{\rm Cov}(\bm{a}) &=&  ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}
+{\rm Cov}(\bm{\hat{a}}) &=&  ( {\cal P}^{T}  \Sigma^{-1}{\cal P})^{-1}
 \ea
 
 
