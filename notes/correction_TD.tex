@@ -62,7 +62,7 @@
 5)
 
 \ba
-{\rm ln}{\cal L}(\bm{d} | \bm{a}) &=& -\frac{N}{2} {\rm ln}(2\pi) - \frac{1}{2} ({\rm det}( \Sigma)) -\frac{1}{2} \left[ ( \bm{d} - {\cal P}\bm{a})^{T} \Sigma^{-1}   ( \bm{d} - {\cal P}\bm{a})\right]  \nonumber \\
+{\rm ln}{\cal L}(\bm{d} | \bm{a}) &=& -\frac{N}{2} {\rm ln}(2\pi) - \frac{1}{2} \ln ({\rm det}( \Sigma)) -\frac{1}{2} \left[ ( \bm{d} - {\cal P}\bm{a})^{T} \Sigma^{-1}   ( \bm{d} - {\cal P}\bm{a})\right]  \nonumber \\
 \frac{\partial{\rm ln}{\cal L}(\bm{d} | \bm{a})}{\partial a_{\gamma}}  &=&   - \frac{1}{2} \sum_{ij} \left[ (  \sum_{\alpha}{\cal P}_{i\alpha}\delta_{\alpha\gamma}) (\Sigma^{-1})_{ij}   ( \bm{d}_{j} - \sum_{\beta}{\cal P}_{j\beta}\bm{a}_{\beta}) + ( \bm{d}_{i} - \sum_{\alpha}{\cal P}_{i\alpha}\bm{a}_{\alpha}) (\Sigma^{-1})_{ij}  \sum_{\beta}{\cal P}_{j\beta} \delta_{\beta\gamma} \right]   \nonumber \nonumber \\
 &=&   - \frac{1}{2} \sum_{ij} \left[ (  {\cal P}_{i\gamma}) (\Sigma^{-1})_{ij}   ( \bm{d}_{j} - \sum_{\beta}{\cal P}_{j\beta}\bm{a}_{\beta}) + ( \bm{d}_{i} - \sum_{\alpha}{\cal P}_{i\alpha}\bm{a}_{\alpha}) (\Sigma^{-1})_{ij}  {\cal P}_{j\gamma} \right]   \nonumber \\
 &=&  -  \sum_{ij}  (  {\cal P}_{i\gamma}) (\Sigma^{-1})_{ij}   ( \bm{d}_{j} - \sum_{\beta}{\cal P}_{j\beta}\bm{a}_{\beta})  
